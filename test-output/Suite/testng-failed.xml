@@ -1,33 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="genericUtility1.ListImp"/>
-  </listeners>
   <test thread-count="5" name="Test(failed)">
+    <parameter name="Browser" value="chrome"/>
     <classes>
-      <class name="vtigerWithPom.CreateContact2Test">
+      <class name="actitime.ActitimeTest">
         <methods>
-          <include name="connectToDB"/>
-          <include name="logoutFromApp"/>
-          <include name="disconnectToDB"/>
-          <include name="loginIntoApp"/>
-          <include name="createCon"/>
-          <include name="closeTheBrowser"/>
-          <include name="launchTheBrowser"/>
+          <include name="runBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="test" invocation-numbers="0"/>
         </methods>
-      </class> <!-- vtigerWithPom.CreateContact2Test -->
-      <class name="vtigerWithPom.CreateContact3Test">
-        <methods>
-          <include name="connectToDB"/>
-          <include name="logoutFromApp"/>
-          <include name="disconnectToDB"/>
-          <include name="loginIntoApp"/>
-          <include name="createCon"/>
-          <include name="closeTheBrowser"/>
-          <include name="launchTheBrowser"/>
-        </methods>
-      </class> <!-- vtigerWithPom.CreateContact3Test -->
+      </class> <!-- actitime.ActitimeTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

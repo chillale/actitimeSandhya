@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="actitime.ActitimeTest">
+      <class name="actitimeTestCases.ActitimeTest1">
         <methods>
+          <include name="closeApp"/>
           <include name="openApp"/>
-          <include name="test"/>
+          <include name="closeBrowser"/>
+          <include name="createNewCustomer"/>
           <include name="launchBrowser"/>
         </methods>
-      </class> <!-- actitime.ActitimeTest -->
+      </class> <!-- actitimeTestCases.ActitimeTest1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
